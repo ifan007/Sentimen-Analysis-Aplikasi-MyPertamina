@@ -45,7 +45,7 @@ st.set_page_config(
 )
 
 ##CSS
-with open("style.css") as f:
+with open("https://github.com/ifan007/Sentimen-Analysis-Aplikasi-MyPertamina/blob/05928b3bf0f35adfc419e54b482b2d34f426d2f8/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown(
