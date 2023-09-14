@@ -1,0 +1,23 @@
+* {
+    font-family: "Averta Demo PE Cutted Demo" !important;
+}
+section.css-163ttbj.e1fqkh3o11 {
+    background-color: rgb(243, 245, 250);
+}
+
+/*Warna Pada Navbar*/
+section[data-testid='stSidebar'] > div:nth-of-type(1) {
+    background-color: #fafafa;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Settingan Sidebar*/
+div.css-1vq4p4l.e1fqkh3o4 {
+    padding: 1rem 0rem 1.5rem;
+}
+
+/*Heder*/
+div[data-testid="stDecoration"] {
+    visibility: hidden;
+}
