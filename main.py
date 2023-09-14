@@ -103,17 +103,10 @@ with st.sidebar:
         },
     )
 
-# Import Data
-data = pd.read_excel(
-    "D:/SKRIPSI/fix/Streamlit/model/Fix data ulasan mypertamina fitur pendaftaran.xlsx"
-)
-
 # Import LSTM Model
 
-with open("model/stem.pkl", "rb") as f:
-    stem_load = pickle.load(f)
 
-new_model = tf.keras.models.load_model("model/lstm model.h5")
+new_model = tf.keras.models.load_model("https://github.com/ifan007/Sentimen-Analysis-Aplikasi-MyPertamina/blob/a42fe4e05f9b4ae6049a891f34eea90f9f710c55/model/lstm%20model.h5")
 
 # ========================================================================
 # Dashboard
@@ -187,7 +180,7 @@ if selected == "Classification With Crawling":
 
         # ===========================Noramlization===========================
 
-            normalized_word = pd.read_excel("kamus\kamus perbaikan.xlsx")
+            normalized_word = pd.read_excel("https://github.com/ifan007/Data-Skripsi/blob/main/kamus%20perbaikan%20kata.xlsx?raw=true")
 
             normalized_word_dict = {}
 
@@ -215,7 +208,7 @@ if selected == "Classification With Crawling":
         # ===========================Filtering===========================
             list_stopwords = set(stopwords.words("indonesian"))
 
-            with open("kamus/stopword.txt", "r") as file:
+            with open("https://github.com/ifan007/Data-Skripsi/blob/main/Stoplist.xlsx", "r") as file:
                 for line in file:
                     line = line.strip()
                     list_stopwords.add(line)
